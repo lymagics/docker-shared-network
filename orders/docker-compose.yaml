@@ -1,0 +1,10 @@
+services:
+  orders:
+    build: .
+    networks:
+      - gateway
+
+networks:
+  gateway:
+    name: gateway
+    external: true

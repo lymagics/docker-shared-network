@@ -1,0 +1,10 @@
+services:
+  users:
+    build: .
+    networks:
+      - gateway
+
+networks:
+  gateway:
+    name: gateway
+    external: true
